@@ -1,0 +1,21 @@
+@mixin nav-button($color, $type: fill) {
+  padding: 0 10px;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  cursor: pointer;
+
+  @if ($type == outline) {
+    border: 1px solid $color;
+    color: $color;
+    &:hover {
+      border-color: #d8b4ff;
+      color: #d8b4ff;
+    }
+  } @else {
+    background: $color;
+    color: #000;
+    &:hover {
+      background: #dfff00;
+    }
+  }
+}

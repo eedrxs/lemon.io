@@ -1,0 +1,8 @@
+@import "./_mixins.scss";
+@import "./_variables.scss";
+
+body {
+  background: $black;
+  color: $white;
+  margin: 0;
+}
