@@ -1,6 +1,6 @@
 @font-face {
   font-family: "DIN Condensed Bold";
   src: local("DIN Condensed Bold"),
-    url("@/assets/fonts/DIN Condensed/DIN Condensed Bold.ttf")
+    url("~/assets/fonts/DIN Condensed/DIN Condensed Bold.ttf")
       format("truetype");
 }
