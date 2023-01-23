@@ -1,28 +1,27 @@
 <template>
   <section class="hero">
-    <div class="hero__img">
-      <img
-        src="/images/home/illustration-hero-main.webp"
-        alt="illustration-hero-main"
-      />
-    </div>
-
-    <div class="hero__copy">
-      <div>
-        <h1 class="hero__copy--main">Behold! The almighty devs</h1>
-        <p class="hero__copy--sub">you’ve been searching for</p>
+    <div class="container hero-wrapper">
+      <div class="hero__img">
+        <img
+          src="/images/home/illustration-hero-main.webp"
+          alt="illustration-hero-main"
+        />
       </div>
-
-      <p class="hero__copy--offer">
-        // Why squander time and money on developers who aren’t perfect for your
-        startup? Let Lemon match you with engineers that can transform your
-        vision into reality — diabolically fast
-      </p>
-
-      <div class="hero__copy--lemon-button-wrapper">
-        <CommonSquigglyButton url="/magic-box"
-          >match me with a dev</CommonSquigglyButton
-        >
+      <div class="hero__copy">
+        <div>
+          <h1 class="hero__copy--main">Behold! The almighty devs</h1>
+          <p class="hero__copy--sub">you’ve been searching for</p>
+        </div>
+        <p class="hero__copy--offer">
+          // Why squander time and money on developers who aren’t perfect for
+          your startup? Let Lemon match you with engineers that can transform
+          your vision into reality — diabolically fast
+        </p>
+        <div class="hero__copy--lemon-button-wrapper">
+          <CommonSquigglyButton url="/magic-box"
+            >match me with a dev</CommonSquigglyButton
+          >
+        </div>
       </div>
     </div>
   </section>
@@ -30,9 +29,12 @@
 
 <style lang="scss" scoped>
 .hero {
-  display: flex;
-  flex-direction: column;
   margin: 1.25rem 0;
+
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
 
   &__img {
     margin-bottom: 0.9375rem;
@@ -79,8 +81,11 @@
 
 @media (min-width: $md-screen) {
   .hero {
-    flex-direction: row-reverse;
     margin: 2.5rem 0;
+
+    &-wrapper {
+      flex-direction: row-reverse;
+    }
 
     &__img {
       padding-top: 9.375rem;

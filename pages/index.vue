@@ -1,11 +1,6 @@
 <template>
   <main>
     <HomeHero />
+    <HomeFeatures />
   </main>
 </template>
-
-<style lang="scss" scoped>
-main {
-  @include page-layout;
-}
-</style>
