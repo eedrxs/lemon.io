@@ -36,8 +36,9 @@
 
   &__img {
     margin-bottom: 0.9375rem;
+    max-width: 21.5625rem;
     img {
-      max-width: 345px;
+      max-width: 100%;
     }
   }
 
@@ -48,18 +49,18 @@
       font-size: 3rem;
       line-height: 1.13;
       letter-spacing: 0.1875rem;
+      text-transform: uppercase;
       margin: 0;
       margin-bottom: 0.9375rem;
-      text-transform: uppercase;
     }
 
     &--sub {
       font-size: 1.5625rem;
       line-height: 1.2;
       letter-spacing: 0.125rem;
+      text-transform: uppercase;
       margin: 0;
       margin-bottom: 1.5625rem;
-      text-transform: uppercase;
     }
 
     &--offer {
@@ -72,6 +73,44 @@
     &--lemon-button-wrapper {
       display: flex;
       justify-content: center;
+    }
+  }
+}
+
+@media (min-width: $md-screen) {
+  .hero {
+    flex-direction: row-reverse;
+    margin: 2.5rem 0;
+
+    &__img {
+      padding-top: 9.375rem;
+    }
+
+    &__copy {
+      &--main {
+        font-size: 7rem;
+        line-height: 1.07;
+        letter-spacing: 0.4rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.3125rem;
+      }
+
+      &--sub {
+        font-size: 3.5rem;
+        line-height: 1;
+        letter-spacing: 0.3125rem;
+        margin-bottom: 2.1875rem;
+      }
+
+      &--offer {
+        font-size: 1.125rem;
+        line-height: 1.56;
+        margin-bottom: 3.125rem;
+      }
+
+      &--lemon-button-wrapper {
+        justify-content: start;
+      }
     }
   }
 }
