@@ -1,3 +1,5 @@
+@import "./variables";
+
 @mixin nav-button($color, $type: fill) {
   padding: 0 10px;
   font-size: 0.9375rem;
@@ -18,4 +20,10 @@
       background: #dfff00;
     }
   }
+}
+
+@mixin page-layout {
+  margin: auto;
+  max-width: $content-width;
+  padding: 0 $content-padding;
 }

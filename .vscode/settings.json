@@ -24,5 +24,6 @@
     "tsconfig.json",
     "README.md",
     ".gitignore"
-  ]
+  ],
+  "svg.preview.background": "dark-transparent"
 }

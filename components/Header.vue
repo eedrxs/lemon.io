@@ -4,7 +4,9 @@
       <div class="header__sidebar"><Sidebar /></div>
 
       <div class="header__logo">
-        <img src="/images/logo-lemon@2x.png" alt="lemon company logo" />
+        <NuxtLink to="/"
+          ><img src="/images/logo-lemon@2x.png" alt="lemon company logo"
+        /></NuxtLink>
       </div>
 
       <nav class="header__links">
@@ -41,13 +43,17 @@ export default {};
   padding: 20px 0;
 
   &-wrapper {
-    margin: auto;
-    max-width: $content-width;
-    padding: 0 $content-padding;
+    @include page-layout;
   }
 
-  &__logo img {
-    width: 195px;
+  &__logo {
+    width: 12.1875rem;
+    a {
+      display: flex;
+    }
+    img {
+      max-width: 100%;
+    }
   }
 
   &__links {
